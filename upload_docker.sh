@@ -5,11 +5,14 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+dockerpath=mfts/sklearn-flask-housing-prices
 
-# Step 2:  
+# Step 2:  s
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login &&\
+    docker image tag sklearn-flask-housing-prices $dockerpath
 
 # Step 3:
 # Push image to a docker repository
+docker image push $dockerpath

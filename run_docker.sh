@@ -4,7 +4,7 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build -t sklearn-flask-docker .
+docker build -t sklearn-flask-housing-prices .
 
 # Step 2: 
 # List docker images
@@ -12,4 +12,4 @@ docker image ls
 
 # Step 3: 
 # Run flask app
-docker run -p 8000:80 sklearn-flask-docker
+docker run -p 8000:80 sklearn-flask-housing-prices
